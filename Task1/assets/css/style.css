@@ -1,0 +1,468 @@
+/*-------------------------------------
+		1.General css
+--------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	color:#a09e9c;
+	background: #fff;
+    text-transform: capitalize;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-------------------------------------
+		2.Navbar
+--------------------------------------*/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgb(170, 145, 113);
+    width: 100%;
+    display: flex;
+    top: 0;
+}
+.navbar .logo{
+    color: rgb(85, 197, 228);
+    padding-left: 50px;
+    font-size: 50px;
+}
+.navbar .list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .list .link-item{
+    font-size: 20px;
+    color: #fff;
+    margin: 40px;
+}
+.navbar .list .link-item:hover{
+    color:  rgb(85, 197, 228);
+}
+.navbar .icons{
+    color: #fff;
+    padding-right: 50px;
+    margin: 20px;
+}
+.navbar .icons i{
+    margin: 20px;
+    font-size: 20px;
+}
+.navbar .icons i:hover{
+    color:  rgb(85, 197, 228);
+}
+/*-------------------------------------
+		3.slider
+--------------------------------------*/
+.Slider{
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color:#f8f9fc;
+
+}
+.Slider .content{
+    padding: 40px;
+}
+.Slider .content h2{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(104, 103, 103, 0.819);
+}
+.Slider .content h5{
+    font-size:  30px;
+    color: rgba(92, 67, 4, 0.365);
+}
+.Slider .content p{
+    padding-bottom: 50px;
+}
+.Slider img{
+    margin: 50px;
+    width: 700px;
+    height: 500px;
+}
+.btn{
+    padding-top: 50px;
+}
+.btn1 {
+    background-color: rgb(170, 145, 113);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btn2{
+    background-color:  rgba(243, 243, 243, 0.324);
+    border-style: none;
+    color:  rgb(170, 145, 113);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btn1:hover{
+    border-style: solid;
+    background-color: #ffffff00;
+    border-color:rgb(170, 145, 113) ;
+    color: rgb(170, 145, 113);
+}
+.btn2:hover{
+    border-style: solid;
+    background-color: #ffffff00;
+    border-color:rgb(170, 145, 113) ;
+}
+/*-------------------------------------
+		4.some-items
+--------------------------------------*/
+.some-items{
+    width: 100%;
+    margin: auto;
+    padding: 80px;
+    text-align: center;
+}
+.some-items .some-item{
+    width: 25%;
+    background-color:#f8f9fc;
+}
+.some-items .some-item:hover h5{
+color: rgb(255, 145, 0);
+}
+.some-items .left img{
+    padding-top: 20px;
+}
+.some-items .some-item h5{
+   color: rgb(99, 99, 99);
+   padding-top: 30px;
+   padding-bottom:30px;
+   font-size: 20px;
+}
+.some-items .some-item p{
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+ }
+ .some-items .some-items-middle{
+    width: 40%;
+    background-color:#f8f9fc;
+    text-align: start;
+    position: relative;
+}
+
+.some-items .some-items-middle .image{
+    padding:30px;
+}
+.some-items .some-items-middle .middle-content h5{
+    color: rgb(99, 99, 99);
+    padding-bottom:20px;
+    font-size: 19px;
+
+}
+.some-items .btn3{
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    color: rgb(170, 145, 113);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-style: solid;
+    background-color: #ffffff00;
+    border-color:rgb(170, 145, 113) ;
+    font-size: 16px;
+    font-weight: 600;
+}
+.some-items .some-items-middle:hover h5{
+    color: rgb(255, 145, 0);
+}
+.some-items .some-items-middle:hover .btn3{
+    color: rgb(255, 255, 255);
+    background-color: rgb(170, 145, 113) ;
+    border: none;
+}
+/*-------------------------------------
+		5.new_arrival
+--------------------------------------*/
+.newarrival{
+    width: 100%;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+.newarrival h1{
+    font-size: 40px;
+    color: black;
+}
+.newarrival .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 50px 100px;
+}
+.newarrival .grid-item {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.newarrival .grid-item .grid-item-image{
+    background-color: #f8f9fc;
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+.newarrival .grid-item img{
+    padding-top: 70px;
+  }
+.newarrival .grid-item .grid-item-image .light-color{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a09e9c40;
+    transform: scale(0);
+  }
+.newarrival .grid-item .grid-item-image .afterhover{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #0b173b;
+    width: 100%;
+    height: 40px;
+    display: none;
+  }
+.newarrival .grid-item .grid-item-image:hover .afterhover{
+    display: flex;
+  }
+.newarrival .grid-item .grid-item-image:hover .light-color{
+    transition: 0.3s linear;
+    transform: scale(1);
+  }
+.newarrival .grid-item .grid-item-content{
+    padding-top: 10px;
+    color: gray;
+  }
+.newarrival .grid-item .grid-item-content p{
+    padding-top: 10px;
+    font-size: 15px;
+  }
+.newarrival .grid-item:hover h6 {
+    color: rgb(255, 145, 0);
+  }
+  /*-------------------------------------
+		6.table
+--------------------------------------*/
+.table{
+    position: relative;
+}
+.table .grayhalf{
+    position: absolute;
+    left: 0;
+    background-color: rgba(43, 43, 46, 0.893);
+    height: 100%;
+    width: 35%;
+}
+.table .overlay{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(89, 89, 89, 0.429);
+    height: 100%;
+    width: 100%;
+}
+.table .content{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    right: 700px;
+    text-align: start;
+    color: white;
+}
+.table .content h1{
+    font-size: 40px;
+}
+.table .content p{
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    line-height: 2.5;
+}
+.table .content h4 span{
+    color:  rgb(255, 145, 0);
+}
+.table .btn{
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    color: rgb(255, 253, 251);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    background-color: rgb(255, 145, 0);
+    font-size: 16px;
+    font-weight: 600;
+}
+ /*-------------------------------------
+		6.Featured
+--------------------------------------*/
+.features{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.features h1{
+    padding-top: 50px;
+    font-size: 40px;
+    color: black;
+}
+.features .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 50px 100px;
+}
+.features .grid-item {
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.features .grid-item .rate{
+    margin-top: 20px;
+    color:#5e5e5e;
+}
+.features .grid-item .rate i{
+    padding-left: 5px;
+    font-size: 15px;
+}
+.features .grid-item .rate p{
+    font-size: 15px;
+}
+.features .grid-item .grid-item-content{
+    padding-top: 15px;
+    color: gray;
+}
+.features .grid-item .grid-item-content p{
+    padding-top: 10px;
+    font-size: 20px;
+  }
+/*-------------------------------------
+		7.blog
+--------------------------------------*/
+.blog{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.blog h1{
+    padding-top: 30px;
+    font-size: 40px;
+    color: black;
+}
+.blog .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 100px 100px;
+}
+.blog .grid-item {
+    margin: 10px;
+    text-align: center;
+}
+.blog .grid-item .grid-item-content{
+    text-align: start;
+    padding: 10px;
+    color: rgb(42, 39, 39);
+}
+.blog .grid-item .grid-item-content p{
+    text-align: start;
+    padding: 10px;
+    color: rgba(56, 56, 56, 0.463);
+}
+.blog .grid-item .grid-item-content .pp{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: rgba(86, 84, 84, 0.417);
+}
+.blog .grid-item .grid-item-image{
+    position: relative;
+    overflow: hidden;
+}
+.blog .grid-item:hover h4 {
+    color:  rgb(255, 145, 0);
+}
+.blog .grid-item:hover img , .light-color{
+    transition: 0.3s linear;
+    transform: scale(1.2);
+}
+/*-------------------------------------
+		8.contact
+--------------------------------------*/
+.contact{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.contact h1{
+    padding-top: 50px;
+    font-size: 40px;
+    color: black;
+    padding-bottom: 20px;
+}
+.contact .Container .image img{
+    padding-left: 100px;
+    width: 700px;
+}
+.contact .Container .form{
+    width: 50%;
+    padding-left: 100px;
+}
+.contact .form input{
+    height: 50px;
+    width: 500px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.contact .Container .form .btn5{
+    color: rgb(255, 253, 251);
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    background-color: rgb(170, 145, 113) ;
+    font-size: 16px;
+    font-weight: 600;
+}
+.contact .Container .form .btn5:hover{
+    border-style: solid;
+    background-color: #ffffff00;
+    border-color:rgb(170, 145, 113) ;
+    color: rgb(170, 145, 113);
+}
